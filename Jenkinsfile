@@ -13,13 +13,13 @@ pipeline {
                 script {
                     echo 'Building Python application...'
                     // Optional: install dependencies if you have requirements.txt
-                    bat 'C:/Users/sinha/AppData/Local/Programs/Python/Python312/python.exe -m pip install -r requirements.txt || echo "No requirements.txt found"'
+                    bat 'C:/Users/laksh/AppData/Local/Programs/Python/Python314/python.exe -m pip install -r requirements.txt || echo "No requirements.txt found"'
 
                     // Run syntax check to ensure no syntax errors
-                    bat 'C:/Users/sinha/AppData/Local/Programs/Python/Python312/python.exe -m py_compile app.py'
+                    bat 'C:/Users/laksh/AppData/Local/Programs/Python/Python314/python.exe -m py_compile app.py'
 
                     // Optional: short background run (non-blocking)
-                    bat 'start /B C:/Users/sinha/AppData/Local/Programs/Python/Python312/python.exe app.py'
+                    bat 'start /B C:/Users/laksh/AppData/Local/Programs/Python/Python314/python.exe app.py'
                     echo 'Build stage completed successfully!'
                 }
             }
